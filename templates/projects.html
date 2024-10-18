@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Styling for the Project Cards */
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        /* Background color for each card header */
+        .card-header {
+            background-color: #f7f7f7;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* Styling for the badges */
+        .badge {
+            font-size: 0.85rem;
+            padding: 0.6em 0.8em;
+            margin: 0.2em;
+            border-radius: 10px;
+        }
+        .badge-primary { background-color: #007bff; }
+        .badge-secondary { background-color: #6c757d; }
+        .badge-success { background-color: #28a745; }
+        .badge-danger { background-color: #dc3545; }
+        .badge-warning { background-color: #ffc107; }
+        .badge-info { background-color: #17a2b8; }
+        .badge-dark { background-color: #343a40; }
+
+        /* Styling for the Project Section */
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        /* Extra padding and margin for cards */
+        .card-body {
+            padding: 20px;
+        }
+        .btn {
+            border-radius: 50px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>My Projects</h1>
+
+        <!-- Portfolio Website Project -->
+        <div class="card mb-4">
+            <div class="card-header">Portfolio Website</div>
+            <div class="card-body">
+                <p class="card-text">A personal portfolio website built with Python and Flask to showcase my projects, skills, and background.</p>
+                <p class="card-text">
+                    Technologies:
+                    <span class="badge badge-primary">Flask</span>
+                    <span class="badge badge-info">HTML</span>
+                    <span class="badge badge-warning">CSS</span>
+                    <span class="badge badge-secondary">Bootstrap</span>
+                </p>
+                <a href="https://github.com/Mmushtaq50/portfolio-website" class="btn btn-primary" target="_blank">View Project</a>
+            </div>
+        </div>
+
+
+        <!-- Identity and Access Management Project -->
+        <div class="card mb-4">
+            <div class="card-header">Identity and Access Management (IAM) Solutions</div>
+            <div class="card-body">
+                <p class="card-text">Developed IAM solutions using SailPoint to manage user access and ensure security compliance.</p>
+                <p class="card-text">
+                    Technologies:
+                    <span class="badge badge-primary">SailPoint</span>
+                    <span class="badge badge-danger">Java</span>
+                    <span class="badge badge-secondary">Spring Boot</span>
+                </p>
+                <a href="https://github.com/Mmushtaq50/iam-solutions" class="btn btn-primary" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <!-- Java Application Development Project -->
+        <div class="card mb-4">
+            <div class="card-header">Java Application Development</div>
+            <div class="card-body">
+                <p class="card-text">Designed and developed scalable Java applications using Spring Boot and JPA-Hibernate framework.</p>
+                <p class="card-text">
+                    Technologies:
+                    <span class="badge badge-danger">Java</span>
+                    <span class="badge badge-secondary">Spring Boot</span>
+                    <span class="badge badge-info">Hibernate</span>
+                    <span class="badge badge-warning">JPA</span>
+                </p>
+                <a href="https://github.com/Mmushtaq50/java-app-development" class="btn btn-primary" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <!-- Web Technologies Project -->
+        <div class="card mb-4">
+            <div class="card-header">Web Technologies Project</div>
+            <div class="card-body">
+                <p class="card-text">Created web applications using HTML, CSS, and Bootstrap, enhancing UI/UX experiences.</p>
+                <p class="card-text">
+                    Technologies:
+                    <span class="badge badge-info">HTML</span>
+                    <span class="badge badge-warning">CSS</span>
+                    <span class="badge badge-secondary">Bootstrap</span>
+                </p>
+                <a href="https://github.com/Mmushtaq50/web-technologies-project" class="btn btn-primary" target="_blank">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

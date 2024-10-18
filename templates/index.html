@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+            background-color: #f0f8ff; /* Light blue background */
+        }
+
+        /* Parallax Effect */
+       .hero-section {
+        background: url('https://source.unsplash.com/1600x900/?tech,developer') no-repeat center center/cover;
+        height: 80vh; /* Adjusted height to allow body background to show */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        padding: 0 15px;
+    }
+
+
+        .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6); /* dark overlay */
+        z-index: -1;
+    }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            animation: fadeInDown 1.5s;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            animation: fadeInUp 2s;
+            margin-top: 15px;
+        }
+
+        .hero-img {
+            width: 150px; /* or adjust to desired size */
+            height: 150px; /* or adjust to desired size */
+            border-radius: 50%;
+            margin-right: 30px;
+            object-fit: cover;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* darker shadow */
+            animation: fadeIn 2s ease-in-out;
+            transition: transform 0.3s; /* smooth transition for hover */
+        }
+
+        .hero-img:hover {
+            transform: scale(1.65); /* slightly enlarge on hover */
+        }
+
+        .btn-cta {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            padding: 12px 40px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            animation: fadeInUp 2.5s;
+        }
+
+        .btn-cta:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 70px 0;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            margin-bottom: 30px;
+            font-size: 3rem;
+            color: #333;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .about-section p {
+            font-size: 1.3rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+            animation: fadeIn 1.5s;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Skills Section */
+        .skills-section {
+            padding: 80px 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .skills-section h2 {
+            margin-bottom: 40px;
+            font-size: 3rem;
+            animation: fadeIn 1.5s;
+        }
+
+        .skill-badge {
+            display: inline-block;
+            font-size: 1.2rem;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50px;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-badge:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer i {
+            color: #007bff;
+            margin: 0 10px;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Photo -->
+    <div id="home" class="hero-section">
+        <div class="hero-content">
+
+            <!-- Add your photo here -->
+            <img src="{{ url_for('static', filename='images/cho22.jpg') }}" alt="Mushtaq Mohammed" class="hero-img">
+            <div>
+                <h1>Welcome to My Portfolio</h1>
+                <p>._Hello! I'm Mushtaq Mohammed, an IT Master's student at QUT.</p>
+                <a href="#about" class="btn btn-cta">Learn More About Me</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Me Section -->
+    <div id="about" class="about-section container">
+        <h2>About Me</h2>
+        <p>I'm currently studying IT at Queensland University of Technology. I have a deep passion for technology, programming, and music production. My journey involves building scalable applications, developing innovative software solutions, and creating complex soundscapes through psytrance music production.</p>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="skills-section">
+        <h2>Skills & Technologies</h2>
+        <span class="skill-badge">Java</span>
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">Spring Boot</span>
+        <span class="skill-badge">Flask</span>
+        <span class="skill-badge">Ableton Live</span>
+        <span class="skill-badge">HTML & CSS</span>
+        <span class="skill-badge">Git</span>
+        <span class="skill-badge">MySQL</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mushtaq Mohammed. All Rights Reserved.</p>
+        <div>
+            <a href="https://github.com/Mmushtaq50" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
