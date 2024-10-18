@@ -1,0 +1,87 @@
+# Java Web Development (Spring Boot)
+
+This project showcases a web application built using Java and Spring Boot. The application implements RESTful services, integrates with a MySQL database, and provides secure user authentication and role-based authorization.
+
+## Key Features:
+- REST API development
+- MySQL database integration
+- Authentication and Authorization using Spring Security
+- MVC architecture with Thymeleaf templates
+
+## Technologies:
+- Java
+- Spring Boot
+- MySQL
+- HTML, CSS, JavaScript
+- Git
+
+## Setup Instructions:
+1. Clone the repository.
+2. Configure the MySQL database in `application.properties`.
+3. Run the application using Spring Boot's embedded Tomcat server.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# IAM (Identity and Access Management)
+
+This project demonstrates the implementation of Identity and Access Management (IAM) using SailPoint. It includes role-based access control, compliance reporting, and secure authentication.
+
+## Key Features:
+- Role-based access control (RBAC)
+- SailPoint integration for identity governance
+- Secure authentication and authorization
+
+## Technologies:
+- Java
+- SailPoint
+- REST APIs
+- SQL
+
+## Setup Instructions:
+1. Clone the repository.
+2. Set up the SailPoint IdentityIQ environment.
+3. Deploy the application and configure roles and permissions.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Portfolio Website (Python & Flask)
+
+This is a personal portfolio website developed using Python and Flask. It displays my projects, skills, and experiences, and integrates with GitHub to show real-time contributions.
+
+## Key Features:
+- Dynamic sections for showcasing projects
+- Mobile-friendly and responsive design
+- Integrated with GitHub to display contributions
+
+## Technologies:
+- Python
+- Flask
+- HTML, CSS
+- JavaScript
+- Git
+
+## Setup Instructions:
+1. Clone the repository.
+2. Install the required dependencies using `pip install -r requirements.txt`.
+3. Run the Flask application with `python app.py`.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Web Technologies Project
+
+This project focuses on modern web development technologies to build a full-stack application. It involves frontend design with HTML, CSS, and JavaScript, and backend development using a REST API.
+
+## Key Features:
+- Frontend development with HTML5, CSS3, and JavaScript
+- Backend API integration
+- Responsive design for cross-device compatibility
+
+## Technologies:
+- HTML5
+- CSS3
+- JavaScript
+- REST API
+- Git
+
+## Setup Instructions:
+1. Clone the repository.
+2. Open the frontend files in a browser.
+3. Set up the backend API and integrate it with the frontend.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
